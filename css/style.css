@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+header {
+    background: rgb(255, 180, 0);
+    width: 100%;
+}
+
+.navigator li ul a {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+nav {
+    max-width: 1180px;
+    height: 80px;
+    margin: 0px auto;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.logo {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.logo img {
+    height: 50px;
+    width: 100%;
+}
+
+.navigator {
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+}
+
+.navigator li a {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color .4s ease;
+}
+
+.navigator li a:hover {
+    color: #000;
+}
+
+.nav__icon,
+.nav__icon span {
+    display: none;
+}
+
+.nav__icon {
+    width: 36px;
+    height: 28px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__icon span {
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.nav__icon span:nth-of-type(1) {
+    top: 0;
+}
+
+.nav__icon span:nth-of-type(2) {
+    top: 12px;
+}
+
+.nav__icon span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.nav__icon.active span:nth-of-type(1) {
+    -webkit-transform: translateY(12px) rotate(-45deg);
+    transform: translateY(12px) rotate(-45deg);
+}
+
+.nav__icon.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav__icon.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-12px) rotate(45deg);
+    transform: translateY(-12px) rotate(45deg);
+}
+
+.footer {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    position: relative;
+    clear: both;
+    z-index: 1;
+    background: #d7ca00;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+footer {
+    bottom: -150px;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer-content h3 {
+    color: black;
+    margin-left: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.1vmax;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+#kurung {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vmax;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i {
+    font-size: 1.5rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: rgb(255, 255, 255);
+}
+
+.footer-bottom {
+    background: #000;
+    width: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: 'Russo One', sans-serif;
+}
+
+.footer-bottom p a {
+    text-decoration: none;
+    color: #b12213;
+}
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        position: relative;
+        z-index: 999;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .navigator {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        z-index: 980;
+    }
+
+    .navigator li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navigator li a {
+        display: block;
+        background: transparent;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .navigator li a:hover {
+        color: #000;
+        background: #fff;
+    }
+
+    .nav__icon,
+    .nav__icon span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+}

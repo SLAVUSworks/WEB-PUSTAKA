@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-color: #336ae2;
+  --secondary-color: #c23219;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 2rem auto;
+  -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 3rem;
+}
+
+header {
+  width: 100%;
+  padding: 1.4rem;
+}
+
+header h3 {
+  color: #fff;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.table-users {
+  width: 95%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+.table-users th,
+.table-users td {
+  text-align: left;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.table-users th {
+  background: #fafafa;
+  padding: 1rem auto;
+  text-align: center;
+}
+
+.btn {
+  background: transparent;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.btn-edit {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-edit:hover {
+  background: var(--primary-color);
+  color: #fafafa;
+}
+
+.btn-delete {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn-delete:hover {
+  background: var(--secondary-color);
+  color: #fafafa;
+}
+
+.btn-add {
+  width: 6rem;
+  height: 2rem;
+  background: var(--primary-color);
+  border: none;
+  color: #fafafa;
+}
+
+.table-wrapper {
+  text-align: center;
+}
+
+/* Modal */
+
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #24232354;
+  display: none;
+}
+
+.modal {
+  position: relative;
+  background: #fafafa;
+  text-align: center;
+  width: 25rem;
+  margin: 5rem auto;
+  -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 3rem;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-header {
+  margin-bottom: 1rem;
+  background: #c5c8ca;
+  padding: 2rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.btn-modal {
+  background: var(--primary-color);
+  border: none;
+  color: #fafafa;
+  width: 9rem;
+}
+
+input {
+  width: 100%;
+  height: 2.2rem;
+  margin-bottom: 1rem;
+  text-indent: 0.5rem;
+  outline: none;
+}
