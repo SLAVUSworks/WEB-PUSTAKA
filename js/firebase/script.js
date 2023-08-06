@@ -44,13 +44,12 @@ window.addEventListener("click", (e) => {
 });
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAVMYqXtIy0cpCibv9BPkT3fU8lcErf2eA",
-  authDomain: "pustaka-digital-3575e.firebaseapp.com",
-  databaseURL: "https://pustaka-digital-3575e-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "pustaka-digital-3575e",
-  storageBucket: "pustaka-digital-3575e.appspot.com",
-  messagingSenderId: "616121602719",
-  appId: "1:616121602719:web:64e2cacc56e171121388aa"
+  apiKey: "AIzaSyCgRxH27CaXwLYkvOdnMD94Xs6Xh7yFHcQ",
+  authDomain: "pustaka-digital-130e7.firebaseapp.com",
+  projectId: "pustaka-digital-130e7",
+  storageBucket: "pustaka-digital-130e7.appspot.com",
+  messagingSenderId: "86349896886",
+  appId: "1:86349896886:web:93de19df26e5b64f9b5a17"
 };
 
 

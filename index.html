@@ -4,64 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Home</title>
 </head> 
 <body>
-    <header id="header" role="heading">
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="bakwan" alt="pustaka"></a>
-            </div>
-            <ul class="navigator">
-                <li><a href="/index.html">UTAMA</a></li>
-                <li><a href="/list.html">LIST BUKU</a></li>
-                <li><a href="/guest.html">TAMU</a></li>
-            </ul>
-            <div class="nav__icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <body>
+        <header id="header" role="heading">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="bakwan" alt="pustaka"></a>
+                </div>
+                <ul class="navigator">
+                    <li><a href="./index.html">UTAMA</a></li>
+                    <li><a href="../guest-acces/list.html">LIST BUKU</a></li>
+                    <li><a href="../guest-acces/guest.html">TAMU</a></li>
+                </ul>
+                <div class="nav__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <script type="text/javascript" src="./js/function.js"></script>
+    
+            </header>
 
+            <div class="flex-container">
+                <div class="flex-item-left">
+                    <img src="/assets/qr-example.jpg" alt="qr" srcset="">
+                </div>
+                <div class="flex-item-right">
+                    <div class="beliau">
+                        <h1>Lorem ipsum dolor sit amet.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, numquam.</p>
+                        <h2>SCAN QR UNTUK MENGAKSES BUKU TAMU</h2>
+                    </div>
+                </div>
+                <div class="flex-item-center">
+                    <div class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora totam maxime necessitatibus? Aliquid ex perferendis in soluta et nam laborum saepe nobis temporibus voluptas consequuntur dignissimos doloribus sit eius illo alias adipisci veritatis quasi optio quibusdam, ea fuga illum. Eius repellendus nam aspernatur ullam autem nobis aliquid et repudiandae quisquam!</div>
+                </div>
+            </div>
 
             <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
             <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
             <script type="module" src="./js/firebase/init.js" defer></script>
             <script type="module" src="./js/firebase/database.js" defer></script>
         </nav>
-    </header>
     <script type="text/javascript" src="./js/function.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-    <div class="push"></div>
-    <footer class="footer">
-        <div class="footer-content">
-            <h3><a id="kurung">A</h3>
-            <ul class="socials">
-                <li><a href="#" target=_blank><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#" target=_blank><i
-                            class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="#" target=_blank><i
-                            class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" target=_blank><i class="fa-brands fa-discord"></i></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p><a href="#" target=_blank>#</p>
-        </div>
+    <footer>
+        <p>Author: bakwan<br>
     </footer>
-</body>
+
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    
+        <script src="./js/firebase/script.js"></script>
+      </body>
 </html>
+    

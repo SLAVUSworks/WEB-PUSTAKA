@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Russo+One&display=swap');
-
 
 :root {
-  --primary-color: #ffb400;
+  --primary-color: #380591;
   --secondary-color: #c23219;
 }
 
@@ -17,24 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: #2196F3;
-}
-
-.item {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.item p {
-  font-size: min(1.4rem);
-  font-size: max(5vh);
-  font-family: 'Russo One', sans-serif;
-}
-
 .container {
   max-width: 50rem;
   margin: 2rem auto;
@@ -44,14 +24,17 @@ body {
   padding-bottom: 3rem;
 }
 
-.container h3 {
+header {
   width: 100%;
+  background: var(--primary-color);
   padding: 1.4rem;
 }
 
-.container h3 {
-    background: rgb(255, 180, 0);
-    width: 100%;
+header h3 {
+  color: #fff;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .table-users {
@@ -84,17 +67,32 @@ body {
   transition: all 0.2s ease;
 }
 
-.btn-add {
-  width: 100%;
-  height: 100%;
+.btn-edit {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn-edit:hover {
   background: var(--primary-color);
-  -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);  border: none;
-  color: #000000;
-  font-family: 'Russo One', sans-serif;
-  font-size: min(1.4rem);
-  font-size: max(5vh);
+  color: #fafafa;
+}
+
+.btn-delete {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn-delete:hover {
+  background: var(--secondary-color);
+  color: #fafafa;
+}
+
+.btn-add {
+  width: 6rem;
+  height: 2rem;
+  background: var(--primary-color);
+  border: none;
+  color: #fafafa;
 }
 
 .table-wrapper {

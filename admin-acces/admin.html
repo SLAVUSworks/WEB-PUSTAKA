@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Buku</title>
+    <link
+      rel="icon"
+      href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FPKief%2Fvscode-material-icon-theme%2Fissues%2F579&psig=AOvVaw0qgYmejh7-SGz7hLAzcvhS&ust=1631534432023000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDKrcGx-fICFQAAAAAdAAAAABAD"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>Database E-Book Pustaka</h3>
+      </header>
+
+      <div class="table-wrapper">
+        <table class="table-users">
+          <tr>
+            <th>Cover</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Kategori</th>
+            <th>File</th>
+            <th>Action</th>
+          </tr>
+        </table>
+        <button class="btn btn-add">Tambahkan Buku</button>
+      </div>
+      <!-- Add Modal -->
+      <div class="add-modal modal-wrapper">
+        <div class="modal">
+          <div class="modal-header"><h3>Tambah Buku</h3></div>
+          <div class="modal-body">
+            <form class="form" autocomplete="off">
+                <input type="File" name="Document" accept="document/pdf, document/doc, document/docx">
+                <input type="File" name="Cover" accept="image/x-png,image/jpeg,image/webp">
+                <input type="text" name="judulBuku" placeholder="Judul Buku" />
+                <input type="text" name="pengarangBuku" placeholder="Pengarang" />
+                <select name="Kategori" id="Kategori">
+                <option value="fiksi">Fiksi</option>
+                <option value="nonfiksi">Non Fiksi</option>
+                <option value="guru">Karya Guru</option>
+                </select>              
+              <button class="btn btn-modal">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Edit Modal -->
+     <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Edit Buku</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="File" name="Document" accept="document/pdf, document/doc, document/docx">
+            <input type="File" name="Cover" accept="image/x-png,image/jpeg,image/webp">
+            <input type="text" name="judulBuku" placeholder="Judul Buku" />
+            <input type="text" name="pengarangBuku" placeholder="Pengarang" />
+            <select id="Kategori">
+                <option value="fiksi">Fiksi</option>
+                <option value="nonfiksi">Non Fiksi</option>
+                <option value="guru">Karya Guru</option>
+            </select>              
+            <button class="btn btn-modal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="../js/firebase/admin.js"></script>
+  </body>
+</html>
