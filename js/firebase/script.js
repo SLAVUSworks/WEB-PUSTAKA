@@ -18,7 +18,6 @@ const renderUser = (doc) => {
         <td>${doc.data().firstName}</td>
         <td>${doc.data().lastName}</td>
         <td>${doc.data().phone}</td>
-        <td>${doc.data().email}</td>
       </tr>  
     `;
   tableUsers.insertAdjacentHTML("beforeend", tr);
@@ -30,7 +29,6 @@ btnAdd.addEventListener("click", () => {
   addModalForm.firstName.value = "";
   addModalForm.lastName.value = "";
   addModalForm.phone.value = "";
-  addModalForm.email.value = "";
 });
 
 window.addEventListener("click", (e) => {
@@ -81,7 +79,6 @@ addModalForm.addEventListener("submit", (e) => {
     firstName: addModalForm.firstName.value,
     lastName: addModalForm.lastName.value,
     phone: addModalForm.phone.value,
-    email: addModalForm.email.value,
   });
   modalWrapper.classList.remove("modal-show");
 });
