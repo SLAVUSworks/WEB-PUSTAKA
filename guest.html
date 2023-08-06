@@ -10,6 +10,9 @@
       href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2FPKief%2Fvscode-material-icon-theme%2Fissues%2F579&psig=AOvVaw0qgYmejh7-SGz7hLAzcvhS&ust=1631534432023000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDKrcGx-fICFQAAAAAdAAAAABAD"
       type="image/x-icon"
     />
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/guest.css" />
   </head>
@@ -29,16 +32,25 @@
                 <span></span>
                 <span></span>
             </div>
-        </header>
+            <script type="text/javascript" src="./js/function.js"></script>
 
+        </header>
+    
+      <div class="grid">
+        <div class="item">
+          <p>Jumlah Tamu</p>
+          <p id="jumlahtamu"></p>
+        </div>
+        <div class="item">
+          <button class="btn btn-add">ISI</button>
+        </div>
+      </div>
 
     <div class="container">
-        <header>
             <h3>BUKU TAMU</h3>
-        </header>
 
       <div class="table-wrapper">
-        <table class="table-users">
+        <table class="table-users" id="table">
           <tr>
             <th>NAMA DEPAN</th>
             <th>NAMA BELAKANG</th>
@@ -46,7 +58,6 @@
             <th>Email</th>
           </tr>
         </table>
-        <button class="btn btn-add">ISI</button>
       </div>
       <!-- Add Modal -->
       <div class="add-modal modal-wrapper">

@@ -6,12 +6,6 @@ const addModal = document.querySelector(".add-modal");
 
 const addModalForm = document.querySelector(".add-modal .form");
 
-//modal edit
-
-const editModal = document.querySelector(".edit-modal");
-
-const editModalForm = document.querySelector(".edit-modal .form");
-
 const btnAdd = document.querySelector(".btn-add");
 
 const tableUsers = document.querySelector(".table-users");
@@ -92,3 +86,23 @@ addModalForm.addEventListener("submit", (e) => {
   });
   modalWrapper.classList.remove("modal-show");
 });
+
+setTimeout (function(){
+  var oRows = document.getElementById('table').getElementsByTagName('tr');
+  var iRowCount = oRows.length;
+  function animateValue(id, start, end, duration) {
+    if (start === end) return;
+    var range = end - start;
+    var current = start;
+    var increment = end > start? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+}
+
+animateValue("value", iRowCount);
+
+  document.getElementById("jumlahtamu").innerHTML = iRowCount + " " + '<i class="fa-solid fa-person"></i>';
+
+  console.log(oRows, iRowCount)
+}, 2000
+
+)
