@@ -61,16 +61,18 @@
         <div class="modal-header"><h3>Edit Buku</h3></div>
         <div class="modal-body">
           <form class="form" autocomplete="off">
-            <input type="File" name="Document" accept="document/pdf, document/doc, document/docx">
-            <input type="File" name="Cover" accept="image/x-png,image/jpeg,image/webp">
+            <input type="url" name="Document" placeholder="Link File">
+            <input type="url" name="Cover" placeholder="IMG_EMBED">
             <input type="text" name="judulBuku" placeholder="Judul Buku" />
             <input type="text" name="pengarangBuku" placeholder="Pengarang" />
-            <select id="Kategori">
-                <option value="fiksi">Fiksi</option>
-                <option value="nonfiksi">Non Fiksi</option>
-                <option value="guru">Karya Guru</option>
+            <label for="Kategori">Pilih Kategori</label>
+            <br>
+            <select name="Kategori" id="Kategori" placeholder="Kategori">
+            <option value="Fiksi">Fiksi</option>
+            <option value="Non-Fiksi">Non Fiksi</option>
+            <option value="Karya-Guru">Karya Guru</option>
             </select>              
-            <button class="btn btn-modal">Submit</button>
+          <button class="btn btn-modal">Submit</button>
           </form>
         </div>
       </div>

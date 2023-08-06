@@ -159,3 +159,8 @@ select {
   text-indent: 0.5rem;
   outline: none;
 }
+
+td img {
+  height: 100%;
+  width: 3em;
+}

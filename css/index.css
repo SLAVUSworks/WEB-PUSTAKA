@@ -44,10 +44,10 @@
     box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
   }
 
-  .beliau h1 {
+  .beliau span {
     font-family: 'Russo One', sans-serif;
     text-align: end;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 500;
   }
 
