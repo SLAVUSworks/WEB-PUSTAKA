@@ -44,12 +44,12 @@ body {
   padding-bottom: 3rem;
 }
 
-h3 {
+.container h3 {
   width: 100%;
   padding: 1.4rem;
 }
 
-h3 {
+.container h3 {
     background: rgb(255, 180, 0);
     width: 100%;
 }

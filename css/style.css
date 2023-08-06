@@ -118,7 +118,7 @@ nav {
     z-index: 1;
     background: #d7ca00;
     height: auto;
-    width: 100vw;
+    width: auto;
     padding-top: 40px;
     color: #fff;
 }
