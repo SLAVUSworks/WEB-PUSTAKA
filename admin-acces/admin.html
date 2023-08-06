@@ -37,14 +37,16 @@
           <div class="modal-header"><h3>Tambah Buku</h3></div>
           <div class="modal-body">
             <form class="form" autocomplete="off">
-                <input type="File" name="Document" accept="document/pdf, document/doc, document/docx">
-                <input type="File" name="Cover" accept="image/x-png,image/jpeg,image/webp">
+                <input type="url" name="Document" placeholder="Link File">
+                <input type="url" name="Cover" placeholder="IMG_EMBED">
                 <input type="text" name="judulBuku" placeholder="Judul Buku" />
                 <input type="text" name="pengarangBuku" placeholder="Pengarang" />
-                <select name="Kategori" id="Kategori">
-                <option value="fiksi">Fiksi</option>
-                <option value="nonfiksi">Non Fiksi</option>
-                <option value="guru">Karya Guru</option>
+                <label for="Kategori">Pilih Kategori</label>
+                <br>
+                <select name="Kategori" id="Kategori" placeholder="Kategori">
+                <option value="Fiksi">Fiksi</option>
+                <option value="Non-Fiksi">Non Fiksi</option>
+                <option value="Karya-Guru">Karya Guru</option>
                 </select>              
               <button class="btn btn-modal">Submit</button>
             </form>
@@ -78,6 +80,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
-    <script src="../js/firebase/admin.js"></script>
+    <script type="module" src="../js/firebase/database.js"></script>
+    <script type="module" src="../js/firebase/admin.js"></script>
   </body>
 </html>

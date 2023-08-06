@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ffb400;
+    --secondary-color: #000000;
+}
+
+.card-users {
+    margin: 2em auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 20px;
+}
