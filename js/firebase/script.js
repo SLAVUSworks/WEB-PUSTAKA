@@ -87,22 +87,14 @@ addModalForm.addEventListener("submit", (e) => {
   modalWrapper.classList.remove("modal-show");
 });
 
-setTimeout (function(){
+window.setTimeout (function(){
   var oRows = document.getElementById('table').getElementsByTagName('tr');
   var iRowCount = oRows.length;
-  function animateValue(id, start, end, duration) {
-    if (start === end) return;
-    var range = end - start;
-    var current = start;
-    var increment = end > start? 1 : -1;
-    var stepTime = Math.abs(Math.floor(duration / range));
-}
+  
 
-animateValue("value", iRowCount);
-
-  document.getElementById("jumlahtamu").innerHTML = iRowCount + " " + '<i class="fa-solid fa-person"></i>';
+  document.getElementById("jumlahtamu").innerHTML = iRowCount + " " + '<i class="fa-solid fa-person"></i>' ;
 
   console.log(oRows, iRowCount)
 }, 2000
-
 )
+
