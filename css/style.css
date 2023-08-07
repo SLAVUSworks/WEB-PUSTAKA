@@ -168,24 +168,12 @@ footer {
     border-radius: 50%;
 }
 
-.socials a i {
+.socials a img {
     font-size: 1.5rem;
-    width: 20px;
+    width: 2em;
     transition: color .4s ease;
 }
 
-.socials a:hover i {
-    color: rgb(255, 255, 255);
-}
-
-.footer-bottom {
-    background: #000;
-    width: auto;
-    padding: 10px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-family: 'Russo One', sans-serif;
-}
 
 .footer-bottom p a {
     text-decoration: none;
