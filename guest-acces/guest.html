@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="../css/guest.css" />
   </head>
   <body>
+    <!-- Web Preload -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+      <script type="text/javascript" src="../js/preload.js"></script>
+    </div>
     <header id="header" role="heading">
       <nav>
           <div class="logo">
@@ -52,7 +59,7 @@
           <tr>
             <th>NAMA DEPAN</th>
             <th>NAMA BELAKANG</th>
-            <th>Phone/Mail</th>
+            <th>Phone/Email</th>
           </tr>
         </table>
       </div>
@@ -64,7 +71,7 @@
             <form class="form" autocomplete="off">
               <input type="text" name="firstName" placeholder="First Name" />
               <input type="text" name="lastName" placeholder="Last Name" />
-              <input type="text" name="phone" placeholder="Phone" />
+              <input type="text" name="phone" placeholder="Phone/Email" />
               <button class="btn btn-modal">Submit</button>
             </form>
           </div>

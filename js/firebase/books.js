@@ -31,12 +31,13 @@ const renderUser = (doc) => {
       </div>
       <!-- Product actions-->
       <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="${doc.data().Document}" Target=_blank>Download</a></div>
+          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="${doc.data().Document}" Target=_blank>Baca</a></div>
       </div>
   </div>
     `;
   cardUsers.insertAdjacentHTML("beforeend", tr);
 };
+
 
 window.addEventListener("click", (e) => {
   if (e.target === addModal) {
@@ -80,6 +81,7 @@ db.collection("users").onSnapshot((snapshot) => {
   });
 });
 
+
 addModalForm.addEventListener("submit", (e) => {
   e.preventDefault();
   db.collection("users").add({
@@ -90,4 +92,3 @@ addModalForm.addEventListener("submit", (e) => {
   });
   modalWrapper.classList.remove("modal-show");
 });
-

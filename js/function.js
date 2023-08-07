@@ -21,7 +21,7 @@ $(function(){
 var typeWriterElement = document.getElementById('typewriter');
 
 // The TextArray: 
-var textArray = ["Selamat Datang di Kafe Buku","SMAN 1 Bukittinggi","Scan QR Untuk Mengakses Buku Tamu", "Tingkatkan Literasi dengan Rajin Membaca Buku", "Kami Juga Menyediakan Berbagai E-Book yang Dapat Didownload"];
+var textArray = ["Selamat Datang di Kafe Buku SMAN 1 Bukittinggi","Scan QR Code Disamping Untuk Mengakses Buku Tamu", "Tingkatkan Literasi dengan Rajin Membaca Buku", "Kami Juga Menyediakan Berbagai E-Book yang Dapat Dibaca oleh Semua Pengunjung "];
 
 // You can also do this by transfering it through a data-attribute
 // var textArray = typeWriterElement.getAttribute('data-array');
