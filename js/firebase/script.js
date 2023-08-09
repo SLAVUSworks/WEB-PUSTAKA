@@ -29,6 +29,7 @@ btnAdd.addEventListener("click", () => {
   addModalForm.firstName.value = "";
   addModalForm.lastName.value = "";
   addModalForm.phone.value = "";
+  addModalForm.createdAt.value = Date.now().toString();
 });
 
 window.addEventListener("click", (e) => {
@@ -79,6 +80,7 @@ addModalForm.addEventListener("submit", (e) => {
     firstName: addModalForm.firstName.value,
     lastName: addModalForm.lastName.value,
     phone: addModalForm.phone.value,
+    createdAt : firebase.firestore.FieldValue.serverTimestamp(),
   });
   modalWrapper.classList.remove("modal-show");
 });

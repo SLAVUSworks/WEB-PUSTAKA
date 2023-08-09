@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 * {
     margin: 0;
     padding: 0
 }
 
+:root {
+    --first-color: #444444;
+    --second-color: #feffdb;
+    --third-color: #ffc60b;
+    --fourt-color: #ff8b00;
+  }
+
 header {
-    background: rgb(255, 180, 0);
+    background: var(--first-color);
     width: 100%;
 }
 
@@ -116,7 +125,7 @@ nav {
     position: relative;
     clear: both;
     z-index: 1;
-    background: #ffb400;
+    background: var(--first-color);
     height: auto;
     width: auto;
     padding-top: 40px;
@@ -135,18 +144,13 @@ footer {
 
 
 .footer-content h3 {
-    color: black;
+    color: var(--second-color);
     margin-left: 30px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     font-size: 2.1vmax;
     font-weight: 800;
     text-transform: capitalize;
     line-height: 3rem;
-}
-
-#kurung {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5vmax;
 }
 
 .socials {
@@ -174,11 +178,6 @@ footer {
     transition: color .4s ease;
 }
 
-
-.footer-bottom p a {
-    text-decoration: none;
-    color: #b12213;
-}
 
 
 @media only screen and (max-width: 700px) {

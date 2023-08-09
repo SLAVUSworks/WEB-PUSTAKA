@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Russo+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 :root {
-  --primary-color: #ffb400;
-  --secondary-color: #c23219;
+  --first-color: #444444;
+  --second-color: #feffdb;
+  --third-color: #ffc60b;
+  --fourt-color: #ff8b00;
 }
 
 * {
@@ -14,7 +16,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
 
@@ -114,7 +116,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  background-color: #2196F3;
+  background-color: var(--second-color);
 }
 
 .item {
@@ -126,7 +128,7 @@ body {
 .item p {
   font-size: min(1.4rem);
   font-size: max(5vh);
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
 .container {
@@ -144,7 +146,7 @@ body {
 }
 
 .container h3 {
-    background: rgb(255, 180, 0);
+    background: var(--second-color);
     width: 100%;
 }
 
@@ -181,12 +183,12 @@ body {
 .btn-add {
   width: 100%;
   height: 100%;
-  background: var(--primary-color);
+  background: var(--fourt-color);
   -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);  border: none;
   color: #000000;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
   font-size: min(1.4rem);
   font-size: max(5vh);
 }
@@ -211,7 +213,8 @@ body {
   position: relative;
   background: #fafafa;
   text-align: center;
-  width: 25rem;
+  width: 20rem;
+  top: 3rem;
   margin: 5rem auto;
   -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.75);
@@ -234,9 +237,10 @@ body {
 }
 
 .btn-modal {
-  background: var(--primary-color);
+  background: var(--fourt-color);
   border: none;
-  color: #fafafa;
+  margin-top: 3em;
+  color: #000000;
   width: 9rem;
 }
 
@@ -250,7 +254,7 @@ input {
 
 @media only screen and (max-width: 560px) {
   .table-users th,
-.table-users td {
+  .table-users td {
   font-size: 0.7rem;
   text-align: left;
   border-top: 1px solid #ddd;

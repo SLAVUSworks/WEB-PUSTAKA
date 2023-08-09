@@ -73,4 +73,9 @@ function StartWriter(i) {
 setTimeout( function () {
 	StartWriter(0);
 },1000);
+
+document.getElementById('direct').addEventListener('click', () => {
+	setTimeout(() => {
+	 onclick=window.location.href='../guest-acces/list.html'   }, 1000);
+});
 							
