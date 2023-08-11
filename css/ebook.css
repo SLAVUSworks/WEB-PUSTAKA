@@ -1,17 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --primary-color: #ffb400;
-    --secondary-color: #000000;
+    --first-color: #444444;
+    --second-color: #feffdb;
+    --third-color: #ffc60b;
+    --fourt-color: #ff8b00;
+}
+
+.media-nav {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.box {
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 20em;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.box {
+    background:  linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(../assets/cirnomathlab.webp);
+    backdrop-filter: brightness(60%);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box a {
+    text-decoration: none;
+    color: var(--first-color);
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+.border {
+    height: 10em;
+    background: var(--first-color);
+}
+
+.label {
+    margin: 2em auto;
+    text-align: center;
 }
 
 .card-users {
     margin: 2em auto;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.video {
+    margin: 2em auto;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+
+.video iframe {
+    border-radius: 5px;
+    height: 15em;
+    margin: 20px;
 }
 
 .card {

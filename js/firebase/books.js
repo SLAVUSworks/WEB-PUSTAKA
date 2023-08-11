@@ -92,3 +92,9 @@ addModalForm.addEventListener("submit", (e) => {
   });
   modalWrapper.classList.remove("modal-show");
 });
+
+// window.setTimeout (function(){
+    
+//   var count = $(tr).length;
+//   document.getElementById("ebookcount").innerHTML = "Ebook" + " " + "(" + count + ")";
+//   5000});
